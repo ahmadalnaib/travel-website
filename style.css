@@ -102,3 +102,63 @@ nav ul li a {
 }
 
 
+/* locations section */
+
+#locations {
+  height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.5),transparent) ,url('./img/new-york-page.png') no-repeat center center/cover;
+  color: #fff;
+  display: flex;
+ align-items: center;
+ position: relative;
+ overflow: hidden;
+
+}
+
+.locations {
+width: 90%;
+margin: auto;
+background: rgba(0,0,0,0.3);
+padding: 1rem;
+font-size: 1.5rem;
+font-weight: normal;
+}
+
+.locations h2 {
+  font-size:3rem;
+  text-decoration: underline;
+  padding: 1rem 0;
+  text-decoration-thickness:0.5rem;
+}
+
+.locations h3 {
+  padding: 2rem 0;
+}
+
+.cloud{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 800px;
+}
+
+.moving-1
+{
+animation: cloudMoving 10s infinite alternate ease-in-out;
+}
+
+.moving-2 {
+  top: 20%;
+  z-index: -3;
+  opacity: 0.5;
+}
+
+@keyframes cloudMoving
+{
+from {
+ transform: translate(10%,-10%);
+}to {
+  transform: translate(0%,0%);
+
+}
+}
